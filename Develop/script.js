@@ -20,8 +20,27 @@ function generatePassword() {
     alert("At least one character type must be selected.");
     return "";
   }
+  // Character sets
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
-  
+  var allChars = "";
+  if (includeLowercase) allChars += lowercaseChars;
+  if (includeUppercase) allChars += uppercaseChars;
+  if (includeNumbers) allChars += numericChars;
+  if (includeSpecialChars) allChars += specialChars;
+
+  // Generate password
+  var password = "";
+  for (var i = 0; i < length; i++) {
+    var randomIndex = Math.floor(Math.random() * allChars.length);
+    password += allChars[randomIndex];
+  }
+
+  return password;
+}
 
 // Write password to the #password input
 function writePassword() {
