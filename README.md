@@ -18,7 +18,7 @@ SWIFT Password Generator is a web application designed to create secure, random 
 - JavaScript
 
 ## Screenshot
-[SWIFT Password Generator Screenshot]()
+[SWIFT Password Generator Screenshot](./Assets/Images/SWIFT-Password-Generator-%20Screenshot.png)
 
 ## Live Site
-[Visit the live site]()
+[Visit the live site](https://piattie.github.io/SWIFT-Password-Genenrator/)
