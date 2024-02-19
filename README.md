@@ -1,4 +1,4 @@
-# SWIFT-Password-Genenrator
+# SWIFT-Password-Generator
 
 # Overview
 
